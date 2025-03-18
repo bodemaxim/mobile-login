@@ -1,0 +1,40 @@
+{
+  "ru": {
+    "registrationForm": {
+      "title": "Введите номер телефона",
+      "subtitle": "Чтобы войти или зарегистрироваться",
+      "countrySelectLabel": "Страна",
+      "countrySelectPlaceholder": "Выберите страну",
+      "countrySearchPlaceholder": "Поиск",
+      "phonePlaceholder": "Номер телефона",
+      "continueButtonLabel": "Продолжить",
+      "terms": "Условия",
+      "privacy": "Конфиденциальность",
+      "enterCode": "Введите код",
+      "sentToNumber": "Отправлен по номеру",
+      "wayToGetCode": "Способ получения кода",
+      "sendNumber": "Отправить",
+      "continue": "Продолжить",
+      "Back": "Назад"
+    }
+  },
+  "en": {
+    "registrationForm": {
+      "title": "Enter phone number",
+      "subtitle": "in order to sign in or register",
+      "countrySelectLabel": "Country",
+      "countrySelectPlaceholder": "Choose a country",
+      "countrySearchPlaceholder": "Search",
+      "phonePlaceholder": "Phone number",
+      "continueButtonLabel": "Continue",
+      "terms": "Terms",
+      "privacy": "Privacy",
+      "enterCode": "Enter code",
+      "sentToNumber": "Sent to phone number",
+      "wayToGetCode": "Way to get code",
+      "sendCode": "Send code",
+      "continue": "Continue",
+      "Back": "Back"
+    }
+  }
+}
