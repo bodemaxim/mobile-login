@@ -45,7 +45,6 @@ const stopTimer = () => {
   }
   isRunning.value = false
   remainingTime.value = initialTime
-  console.log('stop')
 }
 
 onMounted(() => startTimer())

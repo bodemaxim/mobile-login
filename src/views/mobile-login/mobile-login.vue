@@ -22,8 +22,8 @@ const returnToFirstStep = () => {
 </script>
 
 <template>
-  <div class="wrapper">
-    <div class="registration-form">
+  <div class="mobile-login-wrapper">
+    <div class="mobile-login-form">
       <div class="logo">
         <img alt="самый крутой лого" :src="`images/logo.png`" style="height: 60px" />
       </div>
@@ -38,38 +38,32 @@ const returnToFirstStep = () => {
         :sessionId="currentSession?.data.session_id"
         @back="returnToFirstStep"
       />
-      <div class="footer-wrapper">
+      <section class="footer-wrapper">
         <div class="footer">
           <LocaleSelect />
-          <div class="footer-right">
-            <div>
-              <a href="#">{{ $t('registrationForm.terms') }}</a>
-            </div>
-            <div>
-              <a href="#">{{ $t('registrationForm.privacy') }}</a>
-            </div>
+          <div class="footer-right-block">
+            <a href="#">{{ $t('registrationForm.terms') }}</a>
+            <a href="#">{{ $t('registrationForm.privacy') }}</a>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   </div>
 </template>
 
 <style scoped>
-.wrapper {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
+.mobile-login-wrapper {
+  width: 100%;
+  height: 100%;
 }
 
-.registration-form {
+.mobile-login-form {
   display: flex;
   flex-direction: column;
   height: 594px;
   width: 500px;
   max-width: calc(100% - 20px);
-  margin: 0 auto;
+  margin: 30px auto;
   border: solid lightgrey 1px;
   border-radius: 5px;
   padding: 30px;
@@ -137,15 +131,14 @@ const returnToFirstStep = () => {
 }
 
 @media (max-width: 500px) {
-  /* Вы можете изменить 600px на нужное вам значение */
   .footer {
-    flex-direction: column; /* Изменяем направление на столбик */
-    align-items: flex-start; /* Выравниваем элементы по началу (слева) */
-    justify-content: flex-start; /* Выравниваем элементы по началу (сверху) */
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
   }
 }
 
-.footer-right {
+.footer-right-block {
   display: flex;
   flex-direction: row;
   align-items: center;

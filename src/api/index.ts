@@ -12,7 +12,6 @@ export const createSession = async (phone: string): Promise<CreateSessionRespons
         'x-api-key': kodMobiApiKey
       }
     })
-    console.log('createSession response.data', response.data)
     return response.data
   } catch (error) {
     if (axios.isAxiosError(error)) {

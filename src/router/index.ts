@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import MobileLogin from '@/views/registration-form/mobile-login.vue'
+import MobileLogin from '@/views/mobile-login/mobile-login.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),

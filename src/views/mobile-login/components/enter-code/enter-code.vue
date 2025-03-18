@@ -95,7 +95,7 @@ const goBack = () => {
       label="Назад"
       class="back-button"
       @click="goBack"
-    /><br />
+    />
     <Button label="Продолжить" class="continue-button" @click="submitCode" />
   </div>
 </template>
@@ -241,19 +241,23 @@ const goBack = () => {
 .timer {
   position: absolute;
   right: 10px;
-  top: 0;
+  top: 2px;
 }
 
 .send-again {
   position: absolute;
   right: 10px;
-  top: 8px;
+  top: 12px;
   transform: translateY(-50%);
   cursor: pointer;
 }
 </style>
 
 <style>
+/** Не лучший вариант редактирования библиотечных стилей, :deep не сработал.
+PrimeVue дает инструмент редактирования стилей через создание пресета,
+не успел реализовать */
+
 .way-select > .p-select {
   height: 36px;
 }

@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { InputText, Button } from 'primevue'
-import { createSession } from '@/api'
 import CountrySelect from '../country-select/country-select.vue'
 import type { Country } from '../country-select/country-select.types'
+import { createSession } from '@/api'
 import type { CreateSessionResponse } from '@/api/types'
 
 const model = defineModel<string>()
