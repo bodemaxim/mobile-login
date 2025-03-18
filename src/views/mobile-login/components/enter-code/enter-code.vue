@@ -39,7 +39,6 @@ const switchOffTimer = () => {
 
 const sendAgain = async () => {
   if (!props.sessionId) return
-  console.debug('send again')
 
   await sendCode(props.sessionId, selectedWayToGetCode.value.value)
 }
@@ -96,7 +95,7 @@ const goBack = () => {
       class="back-button"
       @click="goBack"
     />
-    <Button label="Продолжить" class="continue-button" @click="submitCode" />
+    <Button label="$t('registrationForm.continue')" class="continue-button" @click="submitCode" />
   </div>
 </template>
 
